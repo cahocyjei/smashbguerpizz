@@ -1,0 +1,14 @@
+# Python
+*.pyc
+*.pyo
+__pycache__/
+*.env
+.env
+
+# Django
+db.sqlite3
+
+
+# Docker
+*.log
+docker-compose.override.yml

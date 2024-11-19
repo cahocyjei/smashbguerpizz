@@ -1,0 +1,21 @@
+services:
+  db:
+    image: postgres
+    environment:
+      - POSTGRES=smashBP
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    volumes:
+      - datapg:/var/lib/postgresql/data
+
+  web:
+    build: .
+    command: python manage.py runserver 0.0.0.0:5500
+    volumes:
+      - .:/WORKDIR
+    ports:
+      - "5500:5500"
+    depends_on:
+      - db
+volumes:
+  datapg: {}
