@@ -1,10 +1,10 @@
 services:
-  db:
+  dbSmash:
     image: postgres
     environment:
-      - POSTGRES=smashBP
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=smashBP
+      - POSTGRES_USER=troyka
+      - POSTGRES_PASSWORD=1914
     volumes:
       - datapg:/var/lib/postgresql/data
 
@@ -16,6 +16,6 @@ services:
     ports:
       - "5500:5500"
     depends_on:
-      - db
+      - dbSmash
 volumes:
   datapg: {}
