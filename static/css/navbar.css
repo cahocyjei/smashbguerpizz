@@ -1,0 +1,55 @@
+.nav-bar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 70%;
+    top: 50px;
+    margin-left: 20%;
+    position: fixed;
+    z-index: 6;
+    border: 1px black solid;
+    background-color: red;
+}
+
+.cont-burguers {
+    margin: 4px;
+    cursor: pointer;
+    width: max-content;
+    border-radius: 100%;
+    box-shadow: 2px 5px 8px yellow;
+    background-image: url(../images/burguer.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100px;
+}
+
+.cont-pizzas {
+    margin: 4px;
+    cursor: pointer;
+    width: max-content;
+    border-radius: 100%;
+    box-shadow: 2px 5px 8px yellow;
+    background-image: url(../images/sm1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100px;
+}
+
+.burguers,
+.pizzas {
+    color: yellow;
+    text-shadow: 2px 4px 4px yellow;
+    text-align: center;
+    border-radius: 100%;
+    width: 70px;
+}
+
+.cont-burguers:hover {
+    transform: translate(5px, 1px);
+    box-shadow: 2px 2px 4px white;
+}
+
+.cont-pizzas:hover {
+    transform: translate(5px, 1px);
+    box-shadow: 2px 2px 4px white;
+}

@@ -1,0 +1,20 @@
+.cont-graphic {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px;
+    border: 1px rgb(224, 70, 70) solid;
+
+}
+
+.cont-img-graph {
+    margin: 4px;
+    width: max-content;
+    border-radius: 100px;
+}
+
+@media (max-width:720px) {
+    .cont-graphic {
+        display: block;
+    }
+}
