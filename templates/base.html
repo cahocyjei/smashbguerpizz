@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} Smash Burguer Pizza {% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+</head>
+
+<body>
+    <div class="container-smash1">
+        <h1 id="smash1">SMASH</h1>
+    </div>
+
+    <div class="cont-smash2">
+        <h1 id="smash2">SMASH</h1>
+    </div>
+
+    <div class="cont-logo-bgpizz">
+        <img src="{% static 'images/logo-doble.png' %}" alt="">
+        <div class="cont-bgpizz">
+            <img src="{% static 'images/BGPIZZ.png' %}" alt="">
+        </div>
+    </div>
+    <div class="cont-graphic">
+        {% for image in images %}
+        <div class="cont-img-graph">
+            <img src="{{image}}" alt="Grafico">
+        </div>
+        {% endfor %}
+    </div>
+
+    <div class="nav-bar">
+        <div class="cont-burguers">
+            <h4 class="burguers">Burguers</h4>
+        </div>
+        <div class="cont-pizzas">
+            <h4 class="pizzas">Pizzas</h4>
+        </div>
+    </div>
+    {% block content %}
+
+    {% endblock %}
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <footer class="footer">
+        <img src="{% static 'images/BGPIZZ.png' %}" alt="">
+    </footer>
+
+
+</body>
+
+</html>
