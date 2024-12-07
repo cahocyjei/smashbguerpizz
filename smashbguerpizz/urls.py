@@ -24,9 +24,6 @@ import numpy as np
 
 import matplotlib.pyplot as plt
 
-#def home(request):
-    #return render(request,'base.html')
-
 def home(request):
     bytes_array = []
     sizes_name_edge = np.array([['SMALL', 'MEDIUM', 'LARGE', 'XLARGE'], [4, 8, 10, 12], [27, 30, 35, 40]])
@@ -40,7 +37,7 @@ def home(request):
         ax.pie(
             sizes[i],
             wedgeprops={
-                'edgecolor': 'blue',
+                'edgecolor': 'yellow',
                 'linewidth': 1,
                 'linestyle': 'dotted',
                 'facecolor':'none'

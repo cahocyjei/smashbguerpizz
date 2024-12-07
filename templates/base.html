@@ -6,6 +6,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %} Smash Burguer Pizza {% endblock %}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ga+Maamli&family=Tangerine:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ga+Maamli&family=Tangerine:wght@400;700&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="{% static 'css/index.css' %}">
 </head>
 
@@ -21,7 +30,8 @@
     <div class="cont-logo-bgpizz">
         <img src="{% static 'images/logo-doble.png' %}" alt="">
         <div class="cont-bgpizz">
-            <img src="{% static 'images/BGPIZZ.png' %}" alt="">
+            <h1 id="logo-burguer">BURGUER</h1>
+            <div id="logo-pizza">Pizza</div>
         </div>
     </div>
     <div class="cont-graphic">
@@ -39,6 +49,24 @@
         <div class="cont-pizzas">
             <h4 class="pizzas">Pizzas</h4>
         </div>
+        <div class="cont-hotdog">
+            <h4 class="hotdog">Hot-Dogs</h4>
+        </div>
+        <div class="cont-patacon">
+            <h4 class="patacon">Patacon</h4>
+        </div>
+        <div class="cont-variados">
+            <h4 class="variados">Variados</h4>
+        </div>
+        <div class="cont-bebidas">
+            <h4 class="bebidas">Bebidas</h4>
+        </div>
+        <div class="cont-login">
+            <div class="login">Log-In</div>
+        </div>
+    </div>
+    <div class="cont-domicilios">
+        <h1 id="domi">Domicilios : 312403395 - Vista Hermosa cr 60 Dg 29 - Cartagena</h1>
     </div>
     {% block content %}
 
@@ -47,9 +75,26 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     <footer class="footer">
-        <img src="{% static 'images/BGPIZZ.png' %}" alt="">
+        <div class="container-smashfooter">
+            <div id="smashfooter1">
+                <div class="wordsm1">S</div>
+                <div class="wordsm1">M</div>
+                <div class="wordsm1">A</div>
+                <div class="wordsm1">S</div>
+                <div class="wordsm1">H</div>
+            </div>
+            <div id="smashfooter2">
+                <div class="wordsm2">S</div>
+                <div class="wordsm2">M</div>
+                <div class="wordsm2">A</div>
+                <div class="wordsm2">S</div>
+                <div class="wordsm2">H</div>
+            </div>
+        </div>
+        <div class="f-burguer">Burguer</div>
+        <div class="f-pizza">Pizza</div>
+        <h4 id="copy">&copy;2024 Smash-BurguerPizza- Todos los derechos reserdos </h4>
     </footer>
-
 
 </body>
 

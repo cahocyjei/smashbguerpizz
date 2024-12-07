@@ -1,36 +1,48 @@
 .container-smash1 {
+    width: 200px;
     top: 0;
-    width: 98%;
     margin: 10px;
     position: fixed;
     z-index: 4;
-    width: max-content;
+    background-color: red;
+    margin-left: 57px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 1px 4px 10px yellow;
 }
 
 #smash1 {
+    width: max-content;
+    font-family: "Ga Maamli";
     margin: 2px;
-    margin-left: 0;
+    margin-left: 8px;
     width: 18%;
     color: yellow;
     text-align: center;
     font-size: 70px;
-    text-shadow: 1px 10px 40px yellow;
+    text-shadow: 2px 4px 10px black;
+    
 }
 
 .cont-smash2 {
-    margin-top: -225px;
-    margin-left: 20px;
+    width: 250px;
+    font-family: "Ga Maamli";
+    margin-top: -278px;
     position: fixed;
-    width: max-content;
     z-index: 5;
+
 }
 
 #smash2 {
-    color: rgb(248, 25, 25);
+    
+    width: max-content;
+    margin: 2px;
+    margin-left: 65px;
+    color: red;
     width: 18%;
     text-align: center;
     font-size: 70px;
-    text-shadow: 10px 1px 10px rgb(245, 68, 36);
+    text-shadow: 1px 2px 10px black;
     
 }
 
@@ -55,7 +67,8 @@
 
 .cont-bgpizz {
     /*display: none;*/
-    width: max-content;
+    background-color: red;
+    width: 200px;
     position: relative;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -66,4 +79,23 @@
 .cont-logo-bgpizz:hover .cont-bgpizz {
     /*display: block;*/
     
+}
+
+#logo-burguer {
+    color: green;
+    text-shadow: 2px -6px 4px yellow;
+    font-size: 45px;
+    font-family: "Ga Maamli";
+    text-align: center;
+    margin: 0;
+}
+
+#logo-pizza {
+    color: white;
+    font-weight: bold;
+    font-family: "Tangerine";
+    font-size: 40px;
+    margin-left: 60%;
+    position: relative;
+    width: max-content;
 }
